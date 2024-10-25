@@ -193,7 +193,7 @@ const util = (() => {
 
     let div = document.createElement("div");
     div.classList.add("m-2");
-    div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 font-esthetic-salam">Kepada Yth Bapak/Ibu/Saudara/i</p><h2 class="text-light">${escapeHtml(
+    div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 font-esthetic-salam">Kepada Yth Bapak/Ibu/Saudara/i</p><h2 class="font-esthetic-salam">${escapeHtml(
       name
     )}</h2>`;
 
