@@ -104,14 +104,15 @@ const util = (() => {
         let tmp = btn.innerHTML;
         btn.innerHTML = msg;
         btn.disabled = true;
+        let dataPemilik = btn.getAttribute("data-pemilik");
         let dataBank = btn.getAttribute("data-nomer");
-        if (btn.getAttribute("data-bank") === `BNI: `) {
+        if (btn.getAttribute("data-bank") === `BCA: `) {
           document.querySelector(`.js-generate-gifthtml`).innerHTML = `<img
                             class="img-fluid"
                             style="height: 15px"
-                            src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png"
+                            src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg"
                             alt=""
-                          /><p>${dataBank}</p>`;
+                          /><p class="m-0">${dataPemilik}</p><p class="m-0">${dataBank}</p>`;
         } else if (btn.getAttribute("data-bank") === `BRI: `) {
           document.querySelector(`.js-generate-gifthtml`).innerHTML = `<img
                             class="img-fluid"
