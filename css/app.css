@@ -37,8 +37,8 @@ body::-webkit-scrollbar {
   color: #594545 !important;
 }
 .img-crop {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
